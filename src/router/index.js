@@ -7,6 +7,7 @@ import appendBookshelf from '@/views/bookshelf/append-bookshelf.vue'
 import compileBookshelf from '@/views/bookshelf/compile-bookshelf.vue'
 import manageProcessingIndents from '@/views/indents/processing/manage-processing-indents.vue'
 import manageDeliveringIndents from '@/views/indents/delivering/manage-delivering-indents.vue'
+import compileDeliveringIndents from '@/views/indents/delivering/compile-delivering-indents.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/manage/processing/indents',
         component: manageProcessingIndents,
         meta: { title: '传智书城 - 未发货订单' }
+    },
+    {
+        path: '/compile/delivering/indents',
+        component: compileDeliveringIndents,
+        meta: { title: '传智书城 - 编辑已发货订单' }
     }
 ]
 

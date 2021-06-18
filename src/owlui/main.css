@@ -17,6 +17,7 @@ body,
     padding: 0px;
     margin: 0px;
     height: auto;
+    min-height: 650px;
 }
 
 /deep/ .el-dialog__body {

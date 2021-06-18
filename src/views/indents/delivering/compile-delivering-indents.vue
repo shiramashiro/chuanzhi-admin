@@ -1,5 +1,5 @@
 <template>
-    <div class="compile-delivering-indents"></div>
+    <div class="compile-delivering-indents">compile</div>
 </template>
 
 <script>

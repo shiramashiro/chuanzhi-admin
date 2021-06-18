@@ -11,7 +11,7 @@
         </div>
         <owl-manage-indents
             :data="indents"
-            :compileRouter="'/compile/delivering/indent'"
+            :compileRouter="'/compile/delivering/indents'"
             @handle-compile="handleCompile"
             @handle-cutoff="handleCutoff"
         ></owl-manage-indents>

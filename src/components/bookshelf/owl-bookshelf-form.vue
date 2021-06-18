@@ -161,7 +161,7 @@ export default {
     props: {
         form: {
             type: Object,
-            required: true
+            required: false
         }
     },
     data() {

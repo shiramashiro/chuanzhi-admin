@@ -1,13 +1,13 @@
 <template>
-    <div class="compile-delivering-indents">
+    <div class="compile-processing-indents">
         <div class="breadcrumb owl-margin-tb-md owl-border-radius-sm">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item :to="{ path: '/' }"
                     >首页</el-breadcrumb-item
                 >
                 <el-breadcrumb-item>管理订单</el-breadcrumb-item>
-                <el-breadcrumb-item :to="{ path: '/manage/delivering/indents' }"
-                    >已发货</el-breadcrumb-item
+                <el-breadcrumb-item :to="{ path: '/manage/processing/indents' }"
+                    >未发货</el-breadcrumb-item
                 >
                 <el-breadcrumb-item>编辑</el-breadcrumb-item>
             </el-breadcrumb>
@@ -28,7 +28,7 @@
 import { indentsService } from '@/mixin/service/indents.js'
 
 export default {
-    name: 'compile-delivering-indents',
+    name: 'compile-processing-indents',
     mixins: [indentsService],
     methods: {
         /**
@@ -41,5 +41,3 @@ export default {
     }
 }
 </script>
-
-<style></style>

@@ -34,6 +34,8 @@ Vue.use(Element)
 // 导入组件，并全局注册
 import owlBookshelfForm from '@/components/bookshelf/owl-bookshelf-form.vue'
 import owlManageIndets from '@/components/indents/owl-manage-indents.vue'
+import owlIdentsForm from '@/components/indents/owl-indents-form.vue'
+Vue.component('owl-indents-form', owlIdentsForm)
 Vue.component('owl-manage-indents', owlManageIndets)
 Vue.component('owl-bookshelf-form', owlBookshelfForm)
 

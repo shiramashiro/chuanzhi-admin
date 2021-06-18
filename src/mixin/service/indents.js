@@ -62,12 +62,25 @@ export const indentsService = {
                     })
                 })
         },
-        /**
-         * 编辑一行数据
-         */
         compile(row, push) {
-            this.$store.commit('setIndentData', row) // 将这一行的数据临时存储早store
-            this.$router.push(push) // 之后跳转到编辑视图进行编辑
+            this.$store.commit('setIndentData', row) // 将这一行的数据临时存储到store
+            this.$router.push(push) // 跳转到编辑视图进行编辑
+        },
+        maintain(form) {
+            this.$axios
+                .post('/update/indent', form)
+                .then(res => {
+                    this.$message({
+                        type: 'success',
+                        message: '保存成功!'
+                    })
+                })
+                .catch(err => {
+                    this.$message({
+                        type: 'error',
+                        message: '保存失败!'
+                    })
+                })
         }
     }
 }

@@ -39,6 +39,8 @@
             <el-form-item label="简介">
                 <el-input
                     type="textarea"
+                    :autosize="{ minRows: 2, maxRows: 4 }"
+                    maxlength="220"
                     placeholder="为书籍添加简介"
                     v-model="form.profile"
                 ></el-input>

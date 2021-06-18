@@ -32,7 +32,9 @@ Vue.prototype.$confirm = MessageBox.confirm
 Vue.use(Element)
 
 // 导入组件，并全局注册
-import owlBookshelfForm from '@/components/owl-bookshelf-form.vue'
+import owlBookshelfForm from '@/components/bookshelf/owl-bookshelf-form.vue'
+import owlManageIndets from '@/components/indents/owl-manage-indents.vue'
+Vue.component('owl-manage-indents', owlManageIndets)
 Vue.component('owl-bookshelf-form', owlBookshelfForm)
 
 Vue.config.productionTip = false

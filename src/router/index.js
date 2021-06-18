@@ -5,7 +5,8 @@ import index from '@/views/index.vue'
 import manageBookshelf from '@/views/bookshelf/manage-bookshelf.vue'
 import appendBookshelf from '@/views/bookshelf/append-bookshelf.vue'
 import compileBookshelf from '@/views/bookshelf/compile-bookshelf.vue'
-import manageCollection from '@/views/collection/manage-collection.vue'
+import manageProcessingIndents from '@/views/indents/processing/manage-processing-indents.vue'
+import manageDeliveringIndents from '@/views/indents/delivering/manage-delivering-indents.vue'
 
 Vue.use(VueRouter)
 
@@ -31,9 +32,14 @@ const routes = [
         meta: { title: '传智书城 - 编辑书籍' }
     },
     {
-        path: '/manage/collection',
-        component: manageCollection,
-        meta: { title: '传智书城 - 管理收藏' }
+        path: '/manage/delivering/indents',
+        component: manageDeliveringIndents,
+        meta: { title: '传智书城 - 已发货订单' }
+    },
+    {
+        path: '/manage/processing/indents',
+        component: manageProcessingIndents,
+        meta: { title: '传智书城 - 未发货订单' }
     }
 ]
 

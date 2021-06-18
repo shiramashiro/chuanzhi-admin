@@ -10,10 +10,6 @@
                 <i class="el-icon-notebook-1"></i>
                 <span slot="title">管理书籍</span>
             </el-menu-item>
-            <el-menu-item index="/manage/collection">
-                <i class="el-icon-collection-tag"></i>
-                <span slot="title">管理收藏</span>
-            </el-menu-item>
             <el-submenu index="empty">
                 <template slot="title">
                     <i class="el-icon-tickets"></i>

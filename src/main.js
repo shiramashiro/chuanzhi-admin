@@ -6,7 +6,7 @@ import store from './store'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 
-axios.defaults.baseURL = 'http://localhost:9000/api/admin/v1'
+axios.defaults.baseURL = 'http://1.116.123.44:9000/api/admin/v1'
 axios.interceptors.request.use(
     function(config) {
         return config

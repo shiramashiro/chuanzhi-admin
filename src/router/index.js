@@ -9,6 +9,8 @@ import manageProcessingIndents from '@/views/indents/processing/manage-processin
 import manageDeliveringIndents from '@/views/indents/delivering/manage-delivering-indents.vue'
 import compileDeliveringIndents from '@/views/indents/delivering/compile-delivering-indents.vue'
 import compileProcessingIndents from '@/views/indents/processing/compile-processing-indents.vue'
+import manageUsers from '@/views/users/manage-users.vue'
+import compileUser from '@/views/users/compile-user.vue'
 
 Vue.use(VueRouter)
 
@@ -52,6 +54,16 @@ const routes = [
         path: '/compile/processing/indents',
         component: compileProcessingIndents,
         meta: { title: '传智书城 - 编辑未发货订单' }
+    },
+    {
+        path: '/manage/users',
+        component: manageUsers,
+        meta: { title: '传智书城 - 管理用户' }
+    },
+    {
+        path: '/compile/user',
+        component: compileUser,
+        meta: { title: '传智书城 - 编辑用户' }
     }
 ]
 

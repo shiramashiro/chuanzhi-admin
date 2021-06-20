@@ -19,7 +19,7 @@
                     format="yyyy-MM-dd HH:mm:ss"
                     v-model="form.date"
                     type="datetime"
-                    placeholder="选择出版日期"
+                    placeholder="选择下单日期"
                 >
                 </el-date-picker>
             </el-form-item>

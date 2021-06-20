@@ -5,36 +5,97 @@
                 <el-table :data="data" stripe border style="width: 100%">
                     <el-table-column type="expand" label="展开" width="60">
                         <template slot-scope="props">
-                            <el-table
-                                :header-cell-style="{
-                                    fontSize: '11px',
-                                    padding: '5px 0'
-                                }"
-                                :cell-style="{
-                                    fontSize: '11px',
-                                    padding: '5px 0'
-                                }"
-                                border
-                                :data="props.row.trolley"
-                                style="width: 100%"
+                            <div class="owl-font-size-lg owl-margin-tb-sm">
+                                订单详细
+                            </div>
+                            <div
+                                class="profile-info owl-card owl-padding-sm owl-border-radius-sm"
                             >
-                                <el-table-column
-                                    prop="title"
-                                    label="书籍名"
-                                ></el-table-column>
-                                <el-table-column
-                                    prop="price"
-                                    label="单价"
-                                ></el-table-column>
-                                <el-table-column
-                                    prop="num"
-                                    label="数量"
-                                ></el-table-column>
-                                <el-table-column
-                                    prop="total"
-                                    label="总价"
-                                ></el-table-column>
-                            </el-table>
+                                <el-form
+                                    label-position="left"
+                                    inline
+                                    class="demo-table-expand"
+                                >
+                                    <el-form-item label="用户ID：">
+                                        <span>{{ props.row.userId }}</span>
+                                    </el-form-item>
+                                    <el-form-item label="下单日期：">
+                                        <span>{{ props.row.date }}</span>
+                                    </el-form-item>
+                                    <el-form-item label="总价：">
+                                        <span>{{ props.row.total }}</span>
+                                    </el-form-item>
+                                    <el-form-item label="收货地址：">
+                                        <span>
+                                            {{ props.row.receiveLocation }}
+                                        </span>
+                                    </el-form-item>
+                                    <el-form-item label="手机号：">
+                                        <span>
+                                            {{ props.row.receivePhone }}
+                                        </span>
+                                    </el-form-item>
+                                    <el-form-item label="收货人：">
+                                        <span>{{ props.row.receiveName }}</span>
+                                    </el-form-item>
+                                    <el-form-item label="订单状态：">
+                                        <el-tag
+                                            :type="
+                                                props.row.statusType ==
+                                                'processing'
+                                                    ? 'warning'
+                                                    : 'success'
+                                            "
+                                            size="mini"
+                                        >
+                                            {{ props.row.status }}
+                                        </el-tag>
+                                    </el-form-item>
+                                    <el-form-item label="支付方式：">
+                                        <span>{{ props.row.payWay }}</span>
+                                    </el-form-item>
+                                    <el-form-item label="状态类型：">
+                                        <span>{{ props.row.statusType }}</span>
+                                    </el-form-item>
+                                </el-form>
+                            </div>
+                            <div class="owl-font-size-lg owl-margin-tb-sm">
+                                购物车商品
+                            </div>
+                            <div
+                                class="owl-card owl-padding-sm owl-border-radius-sm"
+                            >
+                                <el-table
+                                    :header-cell-style="{
+                                        fontSize: '11px',
+                                        padding: '5px 0'
+                                    }"
+                                    :cell-style="{
+                                        fontSize: '11px',
+                                        padding: '5px 0'
+                                    }"
+                                    border
+                                    :data="props.row.trolley"
+                                    style="width: 100%"
+                                >
+                                    <el-table-column
+                                        prop="title"
+                                        label="书籍名"
+                                    ></el-table-column>
+                                    <el-table-column
+                                        prop="price"
+                                        label="单价"
+                                    ></el-table-column>
+                                    <el-table-column
+                                        prop="num"
+                                        label="数量"
+                                    ></el-table-column>
+                                    <el-table-column
+                                        prop="total"
+                                        label="总价"
+                                    ></el-table-column>
+                                </el-table>
+                            </div>
                         </template>
                     </el-table-column>
                     <el-table-column
@@ -73,11 +134,20 @@
                         label="支付方式"
                         width="100"
                     ></el-table-column>
-                    <el-table-column
-                        label="订单状态"
-                        prop="status"
-                        width="100"
-                    ></el-table-column>
+                    <el-table-column label="订单状态" prop="status" width="100">
+                        <template slot-scope="scope">
+                            <el-tag
+                                :type="
+                                    scope.row.statusType == 'processing'
+                                        ? 'warning'
+                                        : 'success'
+                                "
+                                size="mini"
+                            >
+                                {{ scope.row.status }}
+                            </el-tag>
+                        </template>
+                    </el-table-column>
                     <el-table-column label="操作">
                         <template slot-scope="scope">
                             <el-button
@@ -142,5 +212,18 @@ export default {
     -webkit-line-clamp: 1;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.demo-table-expand {
+    font-size: 0;
+}
+.demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+}
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
 }
 </style>

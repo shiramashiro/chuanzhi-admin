@@ -1,7 +1,7 @@
 <template>
     <div class="append-presses">
         <el-breadcrumb separator="/">
-            <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/manage/presses' }"
                 >管理出版社</el-breadcrumb-item
             >

@@ -26,10 +26,6 @@
                 <i class="el-icon-user"></i>
                 <span slot="title">管理用户</span>
             </el-menu-item>
-            <el-menu-item index="/manage/comments">
-                <i class="el-icon-chat-round"></i>
-                <span slot="title">管理评论</span>
-            </el-menu-item>
             <el-menu-item index="/manage/presses">
                 <i class="el-icon-position"></i>
                 <span slot="title">管理出版社</span>

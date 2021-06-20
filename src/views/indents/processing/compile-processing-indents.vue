@@ -2,11 +2,11 @@
     <div class="compile-processing-indents">
         <div class="breadcrumb owl-margin-tb-md owl-border-radius-sm">
             <el-breadcrumb separator="/">
-                <el-breadcrumb-item :to="{ path: '/' }"
+                <el-breadcrumb-item :to="{ path: '/v1/index' }"
                     >首页</el-breadcrumb-item
                 >
                 <el-breadcrumb-item>管理订单</el-breadcrumb-item>
-                <el-breadcrumb-item :to="{ path: '/manage/processing/indents' }"
+                <el-breadcrumb-item :to="{ path: '/v1/manage/processing/indents' }"
                     >未发货</el-breadcrumb-item
                 >
                 <el-breadcrumb-item>编辑</el-breadcrumb-item>

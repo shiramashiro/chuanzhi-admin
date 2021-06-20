@@ -2,7 +2,7 @@
     <div class="manage-bookshelf">
         <div class="breadcrumb owl-margin-tb-md owl-border-radius-sm">
             <el-breadcrumb separator="/">
-                <el-breadcrumb-item :to="{ path: '/' }"
+                <el-breadcrumb-item :to="{ path: '/index' }"
                     >首页</el-breadcrumb-item
                 >
                 <el-breadcrumb-item>管理书籍</el-breadcrumb-item>

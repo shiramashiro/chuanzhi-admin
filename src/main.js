@@ -35,6 +35,8 @@ Vue.use(Element)
 import owlBookshelfForm from '@/components/bookshelf/owl-bookshelf-form.vue'
 import owlManageIndets from '@/components/indents/owl-manage-indents.vue'
 import owlIdentsForm from '@/components/indents/owl-indents-form.vue'
+import owlPressesForm from '@/components/presses/owl-presses-form.vue'
+Vue.component('owl-presses-form', owlPressesForm)
 Vue.component('owl-indents-form', owlIdentsForm)
 Vue.component('owl-manage-indents', owlManageIndets)
 Vue.component('owl-bookshelf-form', owlBookshelfForm)

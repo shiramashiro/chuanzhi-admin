@@ -106,6 +106,12 @@
                     </template>
                 </el-table-column>
             </el-table>
+            <el-pagination
+                class="owl-margin-top-lg"
+                layout="prev, pager, next"
+                :total="1000"
+            >
+            </el-pagination>
         </div>
     </div>
 </template>

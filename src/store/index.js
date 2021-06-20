@@ -7,7 +7,8 @@ export default new Vuex.Store({
     state: {
         bookshelvesData: {},
         indentsData: {},
-        userData: {}
+        userData: {},
+        pressData: {}
     },
     mutations: {
         setBookshelvesData(state, data) {
@@ -18,6 +19,9 @@ export default new Vuex.Store({
         },
         setUserData(state, data) {
             state.userData = data
+        },
+        setPressData(state, data) {
+            state.pressData = data
         }
     },
     actions: {},

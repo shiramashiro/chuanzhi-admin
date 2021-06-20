@@ -15,6 +15,12 @@
             @handle-compile="handleCompile"
             @handle-cutoff="handleCutoff"
         ></owl-manage-indents>
+        <el-pagination
+            class="owl-margin-top-lg"
+            layout="prev, pager, next"
+            :total="1000"
+        >
+        </el-pagination>
     </div>
 </template>
 

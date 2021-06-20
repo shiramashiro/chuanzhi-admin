@@ -11,6 +11,9 @@ import compileDeliveringIndents from '@/views/indents/delivering/compile-deliver
 import compileProcessingIndents from '@/views/indents/processing/compile-processing-indents.vue'
 import manageUsers from '@/views/users/manage-users.vue'
 import compileUser from '@/views/users/compile-user.vue'
+import managePresses from '@/views/presses/manage-presses.vue'
+import compilePress from '@/views/presses/compile-press.vue'
+import appendPress from '@/views/presses/append-press.vue'
 
 Vue.use(VueRouter)
 
@@ -64,6 +67,21 @@ const routes = [
         path: '/compile/user',
         component: compileUser,
         meta: { title: '传智书城 - 编辑用户' }
+    },
+    {
+        path: '/manage/presses',
+        component: managePresses,
+        meta: { title: '传智书城 - 管理出版社' }
+    },
+    {
+        path: '/compile/press',
+        component: compilePress,
+        meta: { title: '传智书城 - 编辑出版社' }
+    },
+    {
+        path: '/append/press',
+        component: appendPress,
+        meta: {title: '传智书城 - 添加出版社'}
     }
 ]
 

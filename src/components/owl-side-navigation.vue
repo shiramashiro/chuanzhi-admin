@@ -30,10 +30,6 @@
                 <i class="el-icon-chat-round"></i>
                 <span slot="title">管理评论</span>
             </el-menu-item>
-            <el-menu-item index="/manage/trolleies">
-                <i class="el-icon-shopping-cart-1"></i>
-                <span slot="title">管理购物车</span>
-            </el-menu-item>
             <el-menu-item index="/manage/presses">
                 <i class="el-icon-position"></i>
                 <span slot="title">管理出版社</span>
@@ -47,8 +43,7 @@ export default {
     name: 'owl-side-navigation',
     data() {
         return {
-            lastIndex: '/manage/bookshelf',
-            menuItems: [{}]
+            lastIndex: '/manage/bookshelf'
         }
     },
     methods: {

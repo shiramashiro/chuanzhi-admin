@@ -18,8 +18,9 @@
                 >
             </div>
             <div class="table">
-                <el-table :data="presses">
-                    <el-table-column label="出版社" prop="name">
+                <el-table :data="presses" border stripe>
+                    <el-table-column label="ID" prop="id"></el-table-column>
+                    <el-table-column width="150" label="出版社" prop="name">
                     </el-table-column>
                     <el-table-column label="封面地址" prop="cover">
                     </el-table-column>
@@ -117,4 +118,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+/deep/ .cell {
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</style>

@@ -5,7 +5,7 @@
                 <div class="session-sidebox__container">
                     <div class="session-sidebox__header">
                         <el-image
-                            src="https://owl-town.oss-cn-chengdu.aliyuncs.com/img/logo/logo.png"
+                            src="https://generic-data.oss-cn-chengdu.aliyuncs.com/owl/img/logo.png"
                             :fit="'fill'"
                         ></el-image>
                         <h2 class="explain">
@@ -110,7 +110,7 @@ export default {
 <style lang="scss" scoped>
 .signin {
     min-height: 99.9vh;
-    background-image: url('https://generic-data.oss-cn-chengdu.aliyuncs.com/img/work.png');
+    background-image: url('https://generic-data.oss-cn-chengdu.aliyuncs.com/owl/img/bg.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -123,7 +123,7 @@ export default {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 900px;
+        width: 830px;
         padding: 0;
         z-index: 1;
         -webkit-transform: translate(-50%, -50%);

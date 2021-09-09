@@ -12,7 +12,7 @@
                     >
                         <el-image
                             style="width: 120px"
-                            src="https://owl-town.oss-cn-chengdu.aliyuncs.com/img/logo/logo.png"
+                            src="https://generic-data.oss-cn-chengdu.aliyuncs.com/owl/img/logo.png"
                             class="owl-margin-rg-lg"
                         ></el-image>
                         后台管理系统
